@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, UILImageLoadingActivity::class.java))
         }
 
+        findViewById<Button>(R.id.ExoPlayerButton).setOnClickListener {
+            startActivity(Intent(this, ExoPlayerActivity::class.java))
+        }
+        
         findViewById<Button>(R.id.frescoButton).setOnClickListener {
             startActivity(Intent(this, FrescoImageLoadingActivity::class.java))
         }
